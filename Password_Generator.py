@@ -3,18 +3,24 @@
 import random
 import string
 
-length = int(input("Enter password length: "))
+# _________________________________________________________________________________________________
 
-characters = (
-            string.ascii_letters +
-            string.digits +
-            string.punctuation
-            )
+try:
+    length = int(input("Enter password length: "))
 
-password = ""
+    if length <= 0:
+        print("Enter a number greater than 0")
 
-for i in range(length):
-    20
-    password += random.choice(characters)
+    else:
+        characters = (string.ascii_letters + string.digits + string.punctuation)
+        
+        password = ""
 
-print("\nGenerated Password:", password)
+        for i in range(length):
+            password += random.choice(characters)
+
+        print("\nGenerated Password:", password)
+
+except ValueError:
+    print("Enter a number")
+# __________________________________________________________________________________________________

@@ -12,13 +12,16 @@ specified length the user types in the terminal.
 Improvements that I attempted to make is to ask the user specific questions, which I would
 use to personalise the users password.
 
+I have detected vulrability in my code as I did not have error handling, which was picked 
+up when a negative number or 0 was entered the minor fix was to account for the length of 
+the password to be a number more than 0 
+
 Replace the capital O with the number "0"
 S to the special character "$"
 Lower case a to "@"
 Lower case L to "/"
 
 These are steps to further improve the strength of the password.
-
 
 I really enjoyed this project as it was simple and easy to do but most importantly it leans 
 towards the security side of software engineering, which I tend to lean most to.
