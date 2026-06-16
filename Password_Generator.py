@@ -5,22 +5,26 @@ import string
 
 # _________________________________________________________________________________________________
 
-try:
-    length = int(input("Enter password length: "))
+while True:
+    try:
+        length = int(input("Enter password length: "))
 
-    if length <= 0:
-        print("Enter a number greater than 0")
+        if length > 0:
+            break
 
-    else:
-        characters = (string.ascii_letters + string.digits + string.punctuation)
-        
-        password = ""
+        else:
+            print("Enter a number greater than 0")
 
-        for i in range(length):
-            password += random.choice(characters)
+    except ValueError:
+        print("Enter NUMBERS only")
 
-        print("\nGenerated Password:", password)
+characters = (string.ascii_letters + string.digits + string.punctuation)  
 
-except ValueError:
-    print("Enter a number")
+password = ""
+
+for i in range(length):
+    password += random.choice(characters)  
+
+print("\nGenerated Password:", password)
+
 # __________________________________________________________________________________________________

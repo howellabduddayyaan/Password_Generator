@@ -14,7 +14,10 @@ use to personalise the users password.
 
 I have detected vulrability in my code as I did not have error handling, which was picked 
 up when a negative number or 0 was entered the minor fix was to account for the length of 
-the password to be a number more than 0 
+the password to be a number more than 0
+
+Another vulrability in my code I have found was when asked for the length of the passward,
+if a letter was entered terminal freezes and no passward is generated. 
 
 Replace the capital O with the number "0"
 S to the special character "$"
